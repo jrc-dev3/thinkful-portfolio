@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+/*
+use up all available space
+*/
+
 html, body, main {
     height: 100%;
     width: 100%;
@@ -28,7 +32,6 @@ header > div > h1 {
 }
 
 
-
 main > div {
     width: 100%;
     height: 100%;
@@ -44,6 +47,11 @@ footer{
     height: 5%;
 }
 
+
+/*
+this portion sets up the main grid layout
+responsive so it collapses as screen shrinks
+*/
 #content_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -113,6 +121,10 @@ a:link{
     color:whitesmoke;
 }
 
+
+/*
+responsive font size
+*/
 nav {
     font-family: monospace;
     font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
