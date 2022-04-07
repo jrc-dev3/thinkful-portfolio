@@ -68,7 +68,7 @@ responsive so it collapses as screen shrinks
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-color: #ffdd00;
+    /* background-color: #ffdd00; */
   
 }
 
@@ -82,8 +82,8 @@ responsive so it collapses as screen shrinks
 #details_wrapper{
     /* grid-column: 2 / 3;
     grid-row: 1 / 2; */
-    background-color: #ffdd00;
-    color: whitesmoke;
+    /* background-color: #ffdd00; */
+    color: black;
     font-family: monospace, sans-serif;
 }
 
@@ -92,8 +92,9 @@ responsive so it collapses as screen shrinks
     max-height: 50%; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #034ea2;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background-color: #034ea2; */
     /* padding: 25%; */
     padding: 0 15%;
     
@@ -103,11 +104,13 @@ ul {
     list-style-type: none;
 }
 
-#aboutSection {
+
+
+/* #aboutSection {
     flex-direction: column;
     background-color: #ed1c24;
     align-items: flex-start;
-}
+} */
 
 #content_wrapper > footer{
     /* grid-column: auto;
