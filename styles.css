@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body, main {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    text-align: center;
+    
+}
+
+header > div > h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(1rem, -0.875rem + 16.333vw, 15rem);
+    margin: 0;
+}
+
+
+
+main > div {
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    height: 5%;
+}
+
+#content_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    overflow-x: auto;
+}
+
+#content_wrapper > div{
+    /* grid-column: 1 / 2;
+    grid-row: 1 / 2; */
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: gold;
+  
+}
+
+#image_wrapper > img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#content_wrapper > article{
+    /* grid-column: 2 / 3;
+    grid-row: 1 / 2; */
+    background-color: #ffdd00;
+    color: white;
+    font-family: monospace, sans-serif;
+
+
+}
+
+#introSection, #aboutSection {
+    min-height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #034ea2;
+    /* padding: 25%; */
+    padding: 0 25%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#aboutSection {
+    flex-direction: column;
+    background-color: #ed1c24;
+    align-items: flex-start;
+}
+
+#content_wrapper > footer{
+    /* grid-column: auto;
+    grid-row: 2 / 3; */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link{
+    color:whitesmoke;
+}
+
+nav {
+    font-family: monospace;
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+}
+
+nav > a:visited{
+    color: red;
+}
+
+
+nav > a:hover{
+    color: white;
+    font-size: 1.5em;
+}
+
+footer > a:visited{
+    color: white;
+}
