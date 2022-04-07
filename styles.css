@@ -60,7 +60,7 @@ responsive so it collapses as screen shrinks
     overflow-x: auto;
 }
 
-#content_wrapper > div{
+#image_wrapper{
     /* grid-column: 1 / 2;
     grid-row: 1 / 2; */
     width: 100%;
@@ -68,7 +68,7 @@ responsive so it collapses as screen shrinks
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-color: gold;
+    background-color: #ffdd00;
   
 }
 
@@ -76,26 +76,27 @@ responsive so it collapses as screen shrinks
     width: 50%;
     display: flex;
     justify-content: center;
+    transform: scaleX(-1);
 }
 
-#content_wrapper > article{
+#details_wrapper{
     /* grid-column: 2 / 3;
     grid-row: 1 / 2; */
     background-color: #ffdd00;
     color: white;
     font-family: monospace, sans-serif;
-
-
 }
 
 #introSection, #aboutSection {
-    min-height: 50%;
+    /* height: 50%;
+    max-height: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #034ea2;
     /* padding: 25%; */
-    padding: 0 25%;
+    padding: 0 15%;
+    
 }
 
 ul {
